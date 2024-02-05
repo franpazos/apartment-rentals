@@ -1,0 +1,16 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+.NavBar img {
+    width: 200px;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5em;
+    color: #8DC63F;
+}

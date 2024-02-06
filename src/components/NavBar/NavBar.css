@@ -3,14 +3,16 @@
     justify-content: space-between;
     margin-bottom: 20px;
     background-color: rgb(206, 206, 206);
+    align-items: center;
 }
 
 .NavBar img {
-    width: 200px;
+    width: 150px;
 }
 
-h1 {
+.NavBar h1 {
     font-family: "Courier New", Courier, monospace;
     font-size: 5em;
     color: #8DC63F;
+    margin: 10px
 }

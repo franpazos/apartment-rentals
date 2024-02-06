@@ -1,14 +1,10 @@
 import './Footer.css'
 
-const Footer = (props) => {
-
-    const link = props.link
-    const text = props.text
+const Footer = () => {
 
     return (
-        <footer>
-            <hr />
-            <a href={link} className='link'>{text}</a>
+        <footer className="Footer">
+            <p><a href="#">Github repository</a></p>
         </footer>
     )
 }

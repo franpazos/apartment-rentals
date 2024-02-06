@@ -6,7 +6,11 @@ const SideBar = (props) => {
     const text = props.text
 
     return (
-        <a href={link} className='button-sidebar'>{text}</a>
+        <header className='SideBar'>
+
+            <a href={link} className='button-sidebar'>{text}</a>
+
+        </header>
     )
 }
 

@@ -1,0 +1,20 @@
+.ApartmentCard {
+    width: 600px;
+    border: 1px solid;
+    box-shadow: 0px 2px 3px gray;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+
+}
+
+.ApartmentCard img {
+    width: 250px;
+}
+
+.ApartmentCard ul {
+    list-style: none;
+    text-align: start;
+}

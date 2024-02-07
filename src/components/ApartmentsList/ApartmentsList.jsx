@@ -5,30 +5,23 @@ import './ApartmentsList.css'
 
 const ApartmentsList = () => {
 
-    const [apartments, setApartments] = useState(ApartmentData)
-    const [showApartments, setShowApartments] = useState(true)
+    const [apartments, setApartments] = useState(ApartmentData.results)
 
-    const deleteApartment = (apartmentIdToDelete) => {
-        const filteredApartments = apartments.filter(elm => {
-            return elm.id !== apartmentIdToDelete
+    const deleteApartment = apartmentIdToDelete => {
+        const filteredApartments = apartments.filter(apartment => {
+            return apartment.id != apartmentIdToDelete
         })
 
         setApartments(filteredApartments)
     }
-
-    const handleApartmentsShow = () => setShowApartments(!showApartments)
-
 
     return (
 
         <section className='ApartmentsList'>
 
             <h2>Apartments list</h2>
-
-            <button onClick={handleApartmentsShow}>{showApartments ? 'Hide' : 'Show'} apartments</button>
-
             {
-                showApartments && apartments.results.map(apartment => {
+                apartments.map(apartment => {
                     return <ApartmentCard key={apartment.id} apartmentInfo={apartment} deleteApartment={deleteApartment} />
                 })
             }

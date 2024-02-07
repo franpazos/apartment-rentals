@@ -4,7 +4,7 @@ const SideBar = () => {
 
 
     return (
-        <section className="Sidebar">
+        <section className="SideBar">
             <a href="#">Home</a>
             <a href="#">About</a>
         </section>

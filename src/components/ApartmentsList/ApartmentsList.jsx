@@ -8,12 +8,12 @@ const ApartmentsList = () => {
     const [apartments, setApartments] = useState(ApartmentData)
     const [showApartments, setShowApartments] = useState(true)
 
-    const deleteApartment = apartmentIdToDelete => {
-        const filteredApartment = apartments.filter(elm => {
-            return elm.id != apartmentIdToDelete
+    const deleteApartment = (apartmentIdToDelete) => {
+        const filteredApartments = apartments.filter(elm => {
+            return elm.id !== apartmentIdToDelete
         })
 
-        setApartments(filteredApartment)
+        setApartments(filteredApartments)
     }
 
     const handleApartmentsShow = () => setShowApartments(!showApartments)

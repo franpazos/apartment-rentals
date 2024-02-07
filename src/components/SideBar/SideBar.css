@@ -1,9 +1,9 @@
 .SideBar {
     position: fixed;
     left: 0;
-    top: 150px;
+    top: 160px;
     width: 200px;
-    /* background-color: #8dc63f; */
+    background-color: #8dc63f;
     height: 100vh;
     border-right: 10px solid #8dc63f;
     display: flex;
@@ -15,12 +15,14 @@
 .button-sidebar {
     border: 1px solid;
     color: black;
+    font-weight: 400;
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
-    width: 200px;
+    width: 150px;
     font-size: .8em;
-    text-align: left;
-    margin: 10px;
+    text-align: center;
+    margin: 30px 10px;
+    background-color: #b2b2b2;
     
 }

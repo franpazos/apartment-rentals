@@ -1,17 +1,23 @@
 .NavBar {
+    background-color: rgb(206, 206, 206);
+    color: #8DC63F;
+    padding: 5px 40px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    background-color: rgb(206, 206, 206);
+    margin-bottom: 0px;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .NavBar img {
     width: 150px;
+    text-align: left;
 }
 
 .NavBar h1 {
     font-size: 5em;
-    color: #8DC63F;
-    margin: 10px
+    margin: 10px;
+    text-align: center;
+
 }

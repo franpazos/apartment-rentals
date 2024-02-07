@@ -4,3 +4,11 @@
     flex-direction: column;
 
 }
+
+.ApartmentsList h2 {
+    margin-top: 200px;
+}
+
+.ApartmentsList button {
+    margin-bottom: 30px ;
+}

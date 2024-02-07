@@ -1,5 +1,5 @@
 .ApartmentCard {
-    width: 600px;
+    width: 700px;
     border: 1px solid;
     box-shadow: 0px 2px 3px gray;
     text-align: center;
@@ -11,10 +11,15 @@
 }
 
 .ApartmentCard img {
-    width: 250px;
+    width: 300px;
 }
 
 .ApartmentCard ul {
     list-style: none;
     text-align: start;
+}
+
+.btn-container {
+    margin-top: 20px;
+
 }

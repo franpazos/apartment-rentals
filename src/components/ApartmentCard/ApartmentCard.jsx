@@ -1,10 +1,10 @@
 import './ApartmentCard.css'
 
+
 const ApartmentCard = props => {
 
     const apartment = props.apartmentInfo
     const deleteApartment = props.deleteApartment
-
 
     return (
         <article className="ApartmentCard">
@@ -18,6 +18,9 @@ const ApartmentCard = props => {
                 <li>Property Type: {apartment.property_type}</li>
                 <li>Accommodates: {apartment.accommodates}</li>
                 <li>Rating: {apartment.review_scores_rating}</li>
+                <div className='btn-container'>
+                    <button className='delete-btn' onClick={() => deleteApartment(apartment.id)}>Delete</button>
+                </div>
 
             </ul>
 

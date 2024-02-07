@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import ApartmentData from '../../ApartmentData.json'
-import ApartmentCard from './../ApartmentCard/ApartmentCard'
-import './ApartmentsList.css'
+
+import ApartmentData from '../ApartmentData.json'
+import ApartmentCard from './ApartmentCard.jsx'
+
 
 const ApartmentsList = () => {
 

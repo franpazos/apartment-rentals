@@ -1,10 +1,10 @@
-import './ApartmentCard.css'
-
+import { Link } from "react-router-dom"
 
 const ApartmentCard = props => {
 
     const apartment = props.apartmentInfo
     const deleteApartment = props.deleteApartment
+
 
     return (
         <article className="ApartmentCard">
@@ -20,6 +20,7 @@ const ApartmentCard = props => {
                 <li><strong>Rating:</strong> {apartment.review_scores_rating}/100</li>
                 <div className='btn-container'>
                     <button className='delete-btn' onClick={() => deleteApartment(apartment.id)}>Delete</button>
+                    <Link to={`/detailspage/${apartment.id}`}>Show Details</Link>
                 </div>
 
             </ul>

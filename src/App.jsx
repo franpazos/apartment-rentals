@@ -1,8 +1,12 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
-import ApartmentsList from './components/ApartmentsList/ApartmentsList'
+import ApartmentsList from './pages/ApartmentsList'
 import SideBar from './components/SideBar/SideBar'
+import AboutPage from './pages/AboutPage'
+import NotFoundPage from './pages/NotFoundPage'
+import DetailsPage from './pages/DetailsPage'
 
 const App = () => {
 
@@ -14,10 +18,14 @@ const App = () => {
 
       <SideBar />
 
-      <ApartmentsList>
+      <Routes>
+        <Route path='/' element={<ApartmentsList />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/detailspage/:apartment_id' element={<DetailsPage />} />
+        <Route path='*' element={<NotFoundPage />} />
 
-      </ApartmentsList>
 
+      </Routes>
 
       <Footer
         link={'https://github.com/franpazos/apartment-rentals'}

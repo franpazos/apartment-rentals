@@ -7,3 +7,66 @@ body {
   padding: 0;
   font-family: 'Dosis', sans-serif;
 }
+
+.ApartmentsList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  margin-left: 100px;
+}
+
+.ApartmentsList h2 {
+    margin-top: 100px;
+}
+
+.ApartmentsList button {
+    margin-bottom: 30px ;
+}
+
+.ApartmentCard {
+    width: 700px;
+    border: 1px solid;
+    box-shadow: 0px 2px 3px gray;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+
+}
+
+.ApartmentCard img {
+    width: 300px;
+}
+
+.ApartmentCard ul {
+    list-style: none;
+    text-align: start;
+}
+
+.btn-container {
+    margin-top: 20px;
+
+}
+
+.AboutPage {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    margin: 200px 250px;
+
+}
+
+.NotFound img {
+    margin: 160px 0 0 210px;
+}
+
+.details {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px 0 30px 300px;
+    position: absolute;
+}

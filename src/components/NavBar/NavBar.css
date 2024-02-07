@@ -11,13 +11,12 @@
 }
 
 .NavBar img {
-    width: 150px;
+    width: 50px;
     text-align: left;
 }
 
 .NavBar h1 {
-    font-size: 5em;
+    font-size: 2em;
     margin: 10px;
-    text-align: center;
-
+    margin-right: 70px;
 }

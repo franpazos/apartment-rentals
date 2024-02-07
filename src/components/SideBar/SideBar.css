@@ -10,9 +10,7 @@
     flex-direction: column;
 }
 
-
-
-.button-sidebar {
+.SideBar a {
     border: 1px solid;
     color: black;
     font-weight: 400;

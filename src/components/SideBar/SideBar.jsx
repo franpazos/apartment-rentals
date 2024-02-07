@@ -1,16 +1,13 @@
 import './SideBar.css'
 
-const SideBar = (props) => {
+const SideBar = () => {
 
-    const link = props.link
-    const text = props.text
 
     return (
-        <header className='SideBar'>
-
-            <a href={link} className='button-sidebar'>{text}</a>
-
-        </header>
+        <section className="Sidebar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </section>
     )
 }
 

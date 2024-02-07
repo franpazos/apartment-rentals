@@ -12,12 +12,12 @@ const ApartmentCard = props => {
             <ul>
                 <h3>{apartment.name}</h3>
 
-                <li>Country: {apartment.country}</li>
-                <li>City: {apartment.city}</li>
-                <li>Price: {apartment.price}</li>
-                <li>Property Type: {apartment.property_type}</li>
-                <li>Accommodates: {apartment.accommodates}</li>
-                <li>Rating: {apartment.review_scores_rating}</li>
+                <li><strong>Country:</strong> {apartment.country}</li>
+                <li><strong>City:</strong> {apartment.city}</li>
+                <li><strong>Price:</strong> {apartment.price} € per night</li>
+                <li><strong>Property Type:</strong> {apartment.property_type}</li>
+                <li><strong>Accommodates:</strong> {apartment.accommodates} people</li>
+                <li><strong>Rating:</strong> {apartment.review_scores_rating}/100</li>
                 <div className='btn-container'>
                     <button className='delete-btn' onClick={() => deleteApartment(apartment.id)}>Delete</button>
                 </div>

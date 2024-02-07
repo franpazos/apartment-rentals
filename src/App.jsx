@@ -1,8 +1,8 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
-import SideBar from './Components/Sidebar/SideBar'
 import ApartmentsList from './components/ApartmentsList/ApartmentsList'
+import SideBar from './components/SideBar/SideBar'
 
 const App = () => {
 
@@ -11,14 +11,9 @@ const App = () => {
       <NavBar
         text={'EcoHomes'}
         image={'./src/assets/logo.png'} />
-      <SideBar
-        link={'/Home'}
-        text={'Home'}
-      />
-      <SideBar
-        link={'/About'}
-        text={'About'}
-      />
+
+      <SideBar />
+
       <ApartmentsList>
 
       </ApartmentsList>

@@ -20,7 +20,8 @@ const ApartmentCard = props => {
                 <li><strong>Rating:</strong> {apartment.review_scores_rating}/100</li>
                 <div className='btn-container'>
                     <button className='delete-btn' onClick={() => deleteApartment(apartment.id)}>Delete</button>
-                    <Link to={`/detailspage/${apartment.id}`}>Show Details</Link>
+                    <Link to={`/detailspage/${apartment.id}`}><button className="details-btn">Show Details</button></Link>
+                    <button className='edit-btn'>Edit</button>
                 </div>
 
             </ul>

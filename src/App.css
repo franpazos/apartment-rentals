@@ -29,7 +29,7 @@ body {
 .ApartmentCard {
     width: 700px;
     border: 1px solid;
-    box-shadow: 0px 2px 3px gray;
+    box-shadow: 2px 3px 5px gray;
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
@@ -38,8 +38,17 @@ body {
 
 }
 
+.ApartmentCard:hover {
+    box-shadow: 4px 6px 10px #8dc63f;
+
+}
+
 .ApartmentCard img {
     width: 300px;
+}
+
+.ApartmentCard h3 {
+    width: 340px;
 }
 
 .ApartmentCard ul {
@@ -49,8 +58,33 @@ body {
 
 .btn-container {
     margin-top: 20px;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.delete-btn {
+    width: 90px;
+    margin: 0;
+    height: 40px;
+    box-shadow: 2px 3px 5px gray;
+}
+
+.details-btn {
+    width: 90px;
+    margin: 0;
+    eight: 40px;
+    box-shadow: 2px 3px 5px gray;
+}
+
+.edit-btn {
+    width: 90px;
+    margin: 0;
+    height: 40px;
+    box-shadow: 2px 3px 5px gray;
+}
+
+
 
 .AboutPage {
     display: flex;

@@ -57,8 +57,16 @@ body {
     justify-content: center;
     position: absolute;
     flex-direction: column;
-    margin: 200px 250px;
+    margin: 80px 300px;
 
+}
+
+.AboutPage a {
+    color: #8dc63f;
+}
+
+.AboutPage h3 {
+    text-decoration: underline;
 }
 
 .NotFound img {

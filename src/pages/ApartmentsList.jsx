@@ -28,12 +28,11 @@ const ApartmentsList = () => {
 
         <div className="apartmentList">
 
-
             <section className='ApartmentsList'>
 
-                <Form addNewApartment={addNewApartment}> </Form>
-
-
+                <div className="divForm">
+                    <Form addNewApartment={addNewApartment}> </Form>
+                </div>
 
                 <h2>Apartments list</h2>
 

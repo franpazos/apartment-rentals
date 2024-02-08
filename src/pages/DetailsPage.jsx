@@ -7,7 +7,7 @@ function DetailsPage() {
         return apt.id === apartment_id
     })
 
-    if (!foundApt) return <Navigate to="/popino" />
+    if (!foundApt) return <Navigate to="/popino" />   //Tecnicamente, innecesario
 
     return (
         <div className="details">

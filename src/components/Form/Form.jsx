@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './form.css'
 
 
 
@@ -43,49 +44,50 @@ const Form = ({ addNewApartment }) => {
 
     return (
         <div className="form">
-            <h2>New apartment</h2>
+            <h2>Add form</h2>
             <form onSubmit={handleFormSubmit}>
-                <label>
-                    Image:
+                <label className="formTag">
+                    <p>Image:</p>
+
                     <input type="text" value={img} onChange={handlmgChange}></input>
 
                 </label>
-                <label>
-                    Name:
+                <label className="formTag">
+                    <p>Name:</p>
                     <input type="text" value={name} onChange={handNameChange}></input>
                 </label>
 
-                <label>
-                    Country:
+                <label className="formTag">
+                    <p>Country:</p>
                     <input type="text" value={country} onChange={handCountryChange} ></input>
                 </label>
 
-                <label>
-                    City:
+                <label className="formTag">
+                    <p>City:</p>
                     <input name="text" value={city} onChange={handCityChange}></input>
                 </label>
 
-                <label>
-                    Price:
+                <label className="formTag">
+                    <p>Price:</p>
                     <input type="number" value={price} onChange={handPriceChange}></input>
                 </label>
 
-                <label>
-                    Property type:
+                <label className="formTag">
+                    <p>Property type:</p>
                     <input type="text" value={propertyType} onChange={handPropertyTypeChange} ></input>
                 </label>
 
-                <label>
-                    Accommodates:
+                <label className="formTag">
+                    <p>Accommodates:</p>
                     <input type="number" value={accommodates} onChange={handAccommodatesChange}></input>
                 </label>
 
-                <label>
-                    Rating:
+                <label className="formTag">
+                    <p>Rating:</p>
                     <input type="number" value={rating} onChange={handRatingChange}></input>
                 </label>
                 <label>
-                    <input type="submit" />
+                    <input type="submit" className="add-btn" />
                 </label>
 
 

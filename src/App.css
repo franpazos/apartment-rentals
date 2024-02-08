@@ -74,13 +74,8 @@ body {
     position: absolute;
 }
 
-.form {
-    margin-top: 70.5px;
-    margin-left: 210px;
-
-}
-
-.form label {
-    margin: 20px;
+.divForm {
+    margin-left: 120px;
+    margin-right: 20px;
 
 }

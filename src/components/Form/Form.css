@@ -1,0 +1,26 @@
+.form {
+    background-color: rgb(233, 231, 231);
+
+
+}
+
+.form label {
+    margin: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.form p {
+    width: 100px;
+    margin: 5px;
+}
+
+.form input {
+    width: 230px;
+    margin: 5px;
+}
+
+.form h2 {
+    margin-left: 20px;
+    padding-top: 10px;
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-
 import ApartmentData from '../ApartmentData.json'
 import ApartmentCard from './ApartmentCard.jsx'
+import Form from './../components/Form/Form.jsx'
 
 
 const ApartmentsList = () => {
@@ -16,19 +16,36 @@ const ApartmentsList = () => {
         setApartments(filteredApartments)
     }
 
+    const addNewApartment = newApartment => {
+        const apartmentsCopy = [...apartments]
+        apartmentsCopy.unshift(newApartment)
+        setApartments(apartmentsCopy)
+    }
+
+
+
     return (
 
-        <section className='ApartmentsList'>
+        <div className="apartmentList">
 
-            <h2>Apartments list</h2>
-            {
-                apartments.map(apartment => {
-                    return <ApartmentCard key={apartment.id} apartmentInfo={apartment} deleteApartment={deleteApartment} />
-                })
-            }
 
-        </section>
+            <section className='ApartmentsList'>
 
+                <Form addNewApartment={addNewApartment}> </Form>
+
+
+
+                <h2>Apartments list</h2>
+
+                {
+                    apartments.map(apartment => {
+                        return <ApartmentCard key={apartment.id} apartmentInfo={apartment} deleteApartment={deleteApartment} />
+                    })
+                }
+
+            </section>
+
+        </div>
     )
 
 }

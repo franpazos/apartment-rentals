@@ -9,7 +9,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 2px 3px 5px rgb(83, 83, 83);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    z-index: 100;
 }
 
 .NavBar img {

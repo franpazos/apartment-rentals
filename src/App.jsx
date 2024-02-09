@@ -8,13 +8,12 @@ import AboutPage from './pages/AboutPage'
 import NotFoundPage from './pages/NotFoundPage'
 import DetailsPage from './pages/DetailsPage'
 
+
 const App = () => {
 
   return (
     <div className='App'>
-      <NavBar
-        text={'EcoHomes'}
-        image={'./src/assets/logo.png'} />
+      <NavBar />
 
       <SideBar />
 
@@ -27,10 +26,7 @@ const App = () => {
 
       </Routes>
 
-      <Footer
-        link={'https://github.com/franpazos/apartment-rentals'}
-        text={'Enlace al repositorio'}
-      />
+      <Footer />
     </div>
   )
 }

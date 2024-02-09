@@ -44,7 +44,7 @@ const Form = ({ addNewApartment }) => {
 
     return (
         <div className="form">
-            <h2>Add form</h2>
+            <h2>Add New Home</h2>
             <form onSubmit={handleFormSubmit}>
                 <label className="formTag">
                     <p>Image:</p>

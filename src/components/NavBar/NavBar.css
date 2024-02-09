@@ -4,19 +4,37 @@
     padding: 5px 40px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0px;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    box-shadow: 2px 3px 5px rgb(83, 83, 83);
 }
 
 .NavBar img {
-    width: 50px;
+    width: 57px;
     text-align: left;
 }
 
 .NavBar h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 10px;
     margin-right: 70px;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    letter-spacing: 4px;
+    animation: glow .5s infinite alternate;
+
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #8dc63f, 0 0 2px #8dc63f, 0 0 3px #8dc63f;
+  }
+  to {
+    text-shadow: 0 0 2px #8dc63f, 0 0 3px #8dc63f, 0 0 4px #8dc63f;
+  }
 }

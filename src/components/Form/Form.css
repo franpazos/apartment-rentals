@@ -1,7 +1,16 @@
 .form {
     background-color: rgb(233, 231, 231);
-
-
+    border: 2px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 400px;
+    width: 900px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .form label {
@@ -18,9 +27,13 @@
 .form input {
     width: 230px;
     margin: 5px;
+    
 }
 
 .form h2 {
     margin-left: 20px;
-    padding-top: 10px;
+    margin: 10px;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #969796;
 }

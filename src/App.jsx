@@ -7,6 +7,7 @@ import SideBar from './components/SideBar/SideBar'
 import AboutPage from './pages/AboutPage'
 import NotFoundPage from './pages/NotFoundPage'
 import DetailsPage from './pages/DetailsPage'
+import EditForm from './pages/EditForm'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/' element={<ApartmentsList />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/detailspage/:apartment_id' element={<DetailsPage />} />
+        <Route path='/editapartment/:apartment_id' element={EditForm}></Route>
         <Route path='*' element={<NotFoundPage />} />
 
 

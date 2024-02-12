@@ -8,9 +8,9 @@ const ApartmentsList = () => {
 
     const [apartments, setApartments] = useState(ApartmentData.results)
 
-    const deleteApartment = apartmentIdToDelete => {
+    const deleteApartment = apartmentNameToDelete => {
         const filteredApartments = apartments.filter(apartment => {
-            return apartment.id != apartmentIdToDelete
+            return apartment.name != apartmentNameToDelete
         })
 
         setApartments(filteredApartments)
@@ -21,7 +21,6 @@ const ApartmentsList = () => {
         apartmentsCopy.unshift(newApartment)
         setApartments(apartmentsCopy)
     }
-
 
 
     return (

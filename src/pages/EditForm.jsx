@@ -1,17 +1,14 @@
-import { Link } from "react-router-dom"
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import ApartmentData from './../ApartmentData.json'
 
-const ApartmentCard = props => {
 
-    const apartment = props.apartmentInfo
-    const deleteApartment = props.deleteApartment
+function EditForm() {
 
-    const editApartment = editedApartment => {
-
-    }
 
 
     return (
-        <article className="ApartmentCard">
+        <article className="EditedApartmentCard">
             <img src={apartment.picture_url.url} alt="picture" />
             <ul>
                 <h3>{apartment.name}</h3>
@@ -23,9 +20,7 @@ const ApartmentCard = props => {
                 <li><strong>Accommodates:</strong> {apartment.accommodates} people</li>
                 <li><strong>Rating:</strong> {apartment.review_scores_rating}/100</li>
                 <div className='btn-container'>
-                    <button className='delete-btn' onClick={() => deleteApartment(apartment.name)}>Delete</button>
-                    <Link to={`/detailspage/${apartment.id}`}><button className="details-btn">Show Details</button></Link>
-                    <Link to={`/editapartment/${apartment.id}`}><button className='edit-btn'>Edit</button></Link>
+                    <Link to='/'><button className='home-btn'>Save</button></Link>
                 </div>
 
             </ul>
@@ -33,8 +28,7 @@ const ApartmentCard = props => {
 
         </article>
     )
+
 }
 
-export default ApartmentCard
-
-
+export default EditForm

@@ -2,11 +2,13 @@ import { useState } from 'react'
 import ApartmentData from '../ApartmentData.json'
 import ApartmentCard from './ApartmentCard.jsx'
 import Form from './../components/Form/Form.jsx'
+import EditForm from './EditForm.jsx'
 
 
 const ApartmentsList = () => {
 
     const [apartments, setApartments] = useState(ApartmentData.results)
+    const [editApartmentData, setEditApartment] = useState()
 
     const deleteApartment = apartmentNameToDelete => {
         const filteredApartments = apartments.filter(apartment => {
@@ -22,6 +24,26 @@ const ApartmentsList = () => {
         setApartments(apartmentsCopy)
     }
 
+    const handleEditChange = event => {
+        const (value, name) = event.target
+        setEditApartment({ ...editApartmentData, [name]: value })
+    }
+
+    const fillEditForm = apartmentId => {
+        const selectedApartment = apartment.find(elm => elm.id === apartmentId)
+        setEditApartment({ selectedApartment })
+    }
+
+    const editApartment = event => {
+
+        prevent
+
+        const updatedApartments = apartments.map(elm => {
+            if (elm.id === editApartmentData.id) {
+                return { title: ApartmentsData.name }
+            }
+        })
+    }
 
     return (
 
@@ -31,6 +53,10 @@ const ApartmentsList = () => {
 
                 <div className="divForm">
                     <Form addNewApartment={addNewApartment}> </Form>
+                </div>
+
+                <div className="editform">
+
                 </div>
 
                 <h2>Apartments list</h2>
